@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block main %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Profile</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body>
+	<div id="re">
+		<div id="top">
+			<div id="circle">
+				<img alt="DP" src="{{url_for('static', filename='f.jpg')}}" />
+			</div>
+			<p id="topc" class="big">
+				<strong>Romar Plummer</strong></p>
+			<p id="topc">
+				@rplummer<br>
+				Kingston, Jamaica<br>
+				{{y}} 
+			</p>
+			<div id="biod">
+			<p id="bio" class="topS">
+				
+				I enjoy playing FIFA and writing code.
+			</p>
+			</div>
+			<div id="stats">
+				<div id="sContainer" class="leftC">
+					<p class="textS">
+						<strong>200</strong>
+					</p>
+					<p id="bio">Posts</p>
+				</div>
+				<div id="sContainer">
+					<p class="textS" id="m">
+						<strong>2542</strong>
+					</p>
+					<p id="bio">Followers</p>
+				</div>
+				<div id="sContainer" class="rightC">
+					<p class="textS" id="m2">
+						<strong>1,498</strong>
+					</p>
+					<p id="bio">Following</p>
+				</div>
+			</div>
+			<button id="btn"><Strong>Follow</Strong></button>
+	</div>
+</body>
+</html>
+{% endblock %}
